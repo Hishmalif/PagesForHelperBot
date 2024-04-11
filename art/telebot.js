@@ -20,6 +20,7 @@ function handleButtonClick() {
         paramJson: paramJson
     };
     tg.sendData(JSON.stringify(data));
+    tg.close();
 }
 
 // Attach the event listener directly to the element
