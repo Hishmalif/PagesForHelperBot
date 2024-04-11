@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>SVG artist</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="art.css" rel="stylesheet" type="text/css"/>
+    <script src="art.js"></script>
+</head>
+<body class="body">
+<div class="w-layout-blockcontainer container w-container">
+    <div class="form-block w-form">
+        <div id="params" class="form">
+            <script>document.addEventListener("DOMContentLoaded", addInput)</script>
+        </div>
+        <a onclick="addInput()" class="w-button">Добавить поле</a>
+        <a onclick="delInput()" class="w-button">Убрать поле</a>
+        <textarea id="jsonData" name="data" data-name="JSON data" placeholder="Json data"
+                  required="" autofocus=""
+                  class="textarea w-input"></textarea>
+    </div>
+</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="telebot.js"></script>
+</body>
+</html>
